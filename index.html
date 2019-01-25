@@ -474,7 +474,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhoushaodong666.github.io/2019/01/25/test1/">
+    <link itemprop="mainEntityOfPage" href="https://zhoushaodong666.github.io/2019/01/25/Gin框架快速入门/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -494,7 +494,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/01/25/test1/" class="post-title-link" itemprop="url">test1</a>
+                <a href="/2019/01/25/Gin框架快速入门/" class="post-title-link" itemprop="url">未命名</a>
               
             
           </h1>
@@ -519,9 +519,25 @@
                 
               
 
-              <time title="创建时间：2019-01-25 10:31:45" itemprop="dateCreated datePublished" datetime="2019-01-25T10:31:45+08:00">2019-01-25</time>
+              <time title="创建时间：2019-01-25 13:05:51" itemprop="dateCreated datePublished" datetime="2019-01-25T13:05:51+08:00">2019-01-25</time>
             
 
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-24 18:05:58" itemprop="dateModified" datetime="2019-01-24T18:05:58+08:00">2019-01-24</time>
+              
             
           </span>
 
@@ -556,145 +572,30 @@
       
         
           
-            
-          
-        
-      
-    </div>
+            <h2 id="Gin框架快速入门"><a href="#Gin框架快速入门" class="headerlink" title="#Gin框架快速入门"></a>#Gin框架快速入门</h2><p>官方文档：<code>https://godoc.org/github.com/gin-gonic/gin</code><br>官方地址：<code>https://github.com/gin-gonic/gin</code></p>
+<p>##1.开始安装</p>
+<ol>
+<li>先配置好GOROOT和GOPATH</li>
+<li>输入命令：<code>go get github.com/gin-gonic/gin</code></li>
+</ol>
+<p>##2.简单示例<br>    //导入包<br>    import (<br>        “github.com/gin-gonic/gin”<br>        “net/http”<br>    )</p>
+<pre><code>func main() {
+    //初始化引擎实例
+    router:=gin.Default()
+    //注册一个Get请求的方法
+    router.GET(&quot;/&quot;, func(context *gin.Context) {
+        context.String(http.StatusOK,&quot;HelloWorld&quot;)
+    })
+    router.Run()//默认8080端口 自己指定例如： router.Run(&quot;:8888&quot;)
+}
+</code></pre><p>效果：</p>
+<p><img src="https://i.imgur.com/orPoXWk.png" alt=""></p>
+<p>##3.API示例</p>
+<p>###3.1.简单路由</p>
+<p>常用的请求方式:GET，POST，PUT，PATCH，DELETE、OPTIONS</p>
+<p>我经常去的几个网站<a href="https://github.com" title="GitHub" target="_blank" rel="noopener">GitHub</a>、<a href="https://www.zhihu.com" title="知乎" target="_blank" rel="noopener">知乎</a>以及<a href="http://www.jianshu.com" title="简书" target="_blank" rel="noopener">简书</a><br><a href="http://www.jianshu.com" title="简书" target="_blank" rel="noopener">简书</a>是一个不错的<a href="http://www.jianshu.com" target="_blank" rel="noopener">写作社区</a>。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhoushaodong666.github.io/2019/01/24/test/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="这个程序不太猿">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/01/24/test/" class="post-title-link" itemprop="url">test</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-01-24 16:29:37" itemprop="dateCreated datePublished" datetime="2019-01-24T16:29:37+08:00">2019-01-24</time>
-            
-
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
           
         
       
@@ -925,7 +826,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
